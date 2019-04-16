@@ -14,6 +14,18 @@ mode = arguments[0]
 directory_name = arguments[1]
 question_number = arguments[2]
 
+if directory_name == "easy" or directory_name == 'medium' or directory_name != 'hard':
+    pass
+else:
+    print('Directory name should be "easy", "medium", or "hard"')
+    sys.exit(1)
+
+try:
+    int(question_number)
+except:
+    print('Question number should be integer only')
+    sys.exit(1)
+
 def update_github():
     git_add = f"git add {directory_name}/{question_number}"
     os.system(git_add)
