@@ -1,5 +1,7 @@
 # Leetcode Python Solutions
 
+This repository contains the python solutions to Leetcode problems covering all difficulty levels. It also contains an automation script I wrote to speed up management of this repo. Read more [here](#update.py).
+
 ## File Structure
 
 ```
